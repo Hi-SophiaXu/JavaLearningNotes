@@ -1,8 +1,5 @@
-[尚硅谷|Java](http://www.atguigu.com/download.shtml)  
 
-
-
-[笔记](https://blog.csdn.net/qq_19387933/article/details/123256034)
+[参考笔记](https://blog.csdn.net/qq_19387933/article/details/123256034)
 
 # 简介
 MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software Foundation迁移到了Google Code。随着开发团队转投Google Code旗下，iBatis3.x正式更名为MyBatis。代码于2013年11月迁移到Github。   
