@@ -1,9 +1,9 @@
 # 参考
-[尚硅谷|Java](http://www.atguigu.com/download.shtml)  
+[尚硅谷|Java](http://www.atguigu.com/download.shtml)   
 
 # Git
 ## git命令
-
+[StudyNote_git命令](Git/git命令.md)
 
 # Java学习路线
 ## 1. 核心基础
@@ -34,13 +34,18 @@ Reference : [B站|尚硅谷MyBatis零基础入门教程](https://www.bilibili.co
 ## 3.微服务生态
 ### Git
 ### Docker
+Reference : [B站|尚硅谷Docker实战教程](https://www.bilibili.com/video/BV1gr4y1U7CY)  
 ### Elasticsearch
 ### Zookeeper
 ### Nginx
 ### SpringSecurity
+Reference : [B站|尚硅谷SpringSecurity框架教程](https://www.bilibili.com/video/BV15a411A7kP)  
 ### ActiveMQ
+Reference : [B站|尚硅谷ActiveMQ教程](https://www.bilibili.com/video/BV164411G7aB/)  
 ### RabbitMQ
+Reference : [B站|尚硅谷RabbitMQ教程](https://www.bilibili.com/video/BV1cb4y1o7zz/)  
 ### RocketMQ
+Reference : [B站|尚硅谷RocketMQ教程](https://www.bilibili.com/video/BV1cf4y157sz/)  
 ### K8S
 
 
