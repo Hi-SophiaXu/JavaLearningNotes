@@ -2,7 +2,8 @@
 查看当前git软件版本
 
 # git config
-
+全局配置文件位置：C:\Users\[用户名]\.git-mm\gitconfig  
+局部配置文件位置：\.git\config  
 local git config：分别设置提交代码的用户名和电子邮件地址（在.git文件夹内的config文件可查看）  
 用法：git config –global user.name “[name]”  
 用法：git config –global user.email “[email address]”
