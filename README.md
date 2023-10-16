@@ -1,3 +1,4 @@
+What does not kill me, makes me stronger.——Friedrich Nietzsche, Twilight of the Idols, 1888  
 # 参考
 [尚硅谷|Java](http://www.atguigu.com/download.shtml)   
 
@@ -50,6 +51,6 @@ Reference : [B站|尚硅谷RocketMQ教程](https://www.bilibili.com/video/BV1cf4
 
 
 # Markdown
-
+[runoob|Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)
 
 # XML
