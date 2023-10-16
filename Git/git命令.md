@@ -2,21 +2,41 @@
 查看当前git软件版本
 
 # git config
-全局配置文件位置：C:\Users\[用户名]\.git-mm\gitconfig  
+全局配置文件位置：C:/Users/[用户名]/.git-mm/.gitconfig  
 局部配置文件位置：\.git\config  
-local git config：分别设置提交代码的用户名和电子邮件地址（在.git文件夹内的config文件可查看）  
-用法：git config –global user.name “[name]”  
-用法：git config –global user.email “[email address]”
 
-global git config：设置全局（对整个git软件所有的仓库用全局的名称）（位置：C:/用户/你的用户/.gitconfig）  
+## 查看配置
+```
+# 查看所有的全局配置
+git config --global --list
+# 查看指定仓库配置
+git config --local --list
+# 查看指定仓库指定配置项
+git config user.name
+```
+## 设置配置
+local git config：分别设置提交代码的用户名和电子邮件地址（在.git文件夹内的config文件可查看）  
+用法：git config user.name “[name]”  
+用法：git config user.email “[email address]”
+
+global git config：设置全局（对整个git软件所有的仓库用全局的名称）  
 git config --global user.name [name]  
 git config --global user.email [email]
+## 获取帮助信息
+```
+# 获取 git config 命令的帮助手册
+git help config
+# 获取 git config 命令的快速参考
+git config -h
+```
 
 # git init
+
 在当前路径中创建一个新的代码库，生成.git文件夹  
 用法：git init [repository name]
 
 # git clone
+
 通过指定的URL获取一个代码库  
 用法：git clone [url]
 
@@ -24,6 +44,7 @@ git config --global user.email [email]
 git clone [url] [别名]
 
 # git add
+
 将一个文件添加至stage(暂存区)  
 用法：git add [file]  
 
@@ -34,6 +55,7 @@ git clone [url] [别名]
 用法：git add .
 
 # git commit
+
 将暂存区里的内容存入本地仓库中  
 
 在版本历史记录中永久记录文件  
@@ -46,6 +68,7 @@ git commit -m["message"]
 用法：git commit -a
 
 # git diff
+
 显示尚未添加到stage的文件的变更  
 用法：git diff  
 
@@ -56,11 +79,13 @@ git commit -m["message"]
 用法：git diff [first branch] [second branch]  
 
 # git status
+
 暂存区状态：显示所有需要提交的文件  
 用法：git status  
 untracked filed：未追踪状态，git未将该文件管理起来
 
 # git rm
+
 删除工作目录中的文件，并将删除动作添加到stage  
 用法：git rm [file]  
 
@@ -68,6 +93,7 @@ untracked filed：未追踪状态，git未将该文件管理起来
 git rm --cached [file]
 
 # git log
+
 显示当前分支的版本历史记录（显示全部版本号，作者，提交时间）  
 用法：git log  
 
@@ -82,10 +108,12 @@ git log [commitID]
 git log [标签名]
 
 # git show
+
 显示指定提交的元数据以及内容变更  
 用法：git show [commit]
 
 # git tag
+
 可以给每一个版本增加标签，但标签不能重复  
 给指定的提交添加标签（别名），以后就可以通过别名进行访问  
 用法：git tag [标签名] [commitID]  
@@ -99,6 +127,7 @@ git tag -d [标签名]
 标签还可以创建分支，（分支就是引用了一个提交的版本号，而标签就是给版本增加了别名）
 
 # git branch
+
 显示当前代码库中所有的本地分支  
 用法：git branch
 
@@ -109,6 +138,7 @@ git tag -d [标签名]
 用法：git branch -d [branch name]
 
 # git checkout
+
 切换分支  
 用法：git checkout [branch name]  
 
@@ -119,6 +149,7 @@ git tag -d [标签名]
 git checkout -b [标签名]  
 
 # git merge
+
 将指定分支的历史记录合并到当前分支  
 用法：git merge [branch name]  
 
@@ -135,6 +166,7 @@ git add [file]
 git commit -m 解决冲突
 
 # git remote
+
 可以直接在.git内的config文件修改  
 将本地的代码库连接到远程服务器  
 用法：git remote add [variable name] [Remote Server Link]  
@@ -146,6 +178,7 @@ git remote remove [remote name]
 git remote rename [rename]
 
 # git push
+
 将主分支上提交的变更发送到远程代码库  
 用法：git push [variable name] master  
 
@@ -164,6 +197,7 @@ git remote rename [rename]
 复制本地安全认证文件内容，在GitHub或gitee平台设置SSH公钥
 
 # git pull
+
 获取远程服务器上的变更，并合并到你的工作目录  
 用法：git pull [Repository Link]  
 
@@ -171,6 +205,7 @@ git remote rename [rename]
 git pull [远程仓库名称] [分支]  
 
 # git stash
+
 临时保存所有修改的文件  
 用法：git stash save
 
@@ -184,10 +219,12 @@ git pull [远程仓库名称] [分支]
 用法：git stash drop
 
 # git restore
+
 没提交前误删除文件，从存储区域恢复至工作区  
 git restore [file]
 
 # git reset  
+
 从stage中撤出指定的文件，但可以保留文件的内容  
 用法：git reset [file]  
 
@@ -199,6 +236,7 @@ git restore [file]
 用法：git reset –hard [commit号]  
 
 # git revert
+
 $ git log --oneline  
 后版本号  
 前版本号  
