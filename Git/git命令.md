@@ -22,6 +22,38 @@ local git config：分别设置提交代码的用户名和电子邮件地址（�
 global git config：设置全局（对整个git软件所有的仓库用全局的名称）  
 git config --global user.name [name]  
 git config --global user.email [email]
+
+```
+// 添加GIT全局配置
+git config --global user.name “git” // 配置全局用户名(这个名称将被应用到创建一个ssh连接型远程资源库时)
+git config --global user.email coTest_1@163.com // 配置全局邮箱
+git config --global gui.encoding utf-8 // 配置GUI编码
+git config --global core.quotepath false // 设置不转义中文字符(命令行或bash运行git命令时显示的文件路径不用编码模式显示)
+git config --global http.postBuffer 524288000 // 配置Http的Post缓存容量
+git config --global i18n.commitencoding utf-8 // 配置提交时的编码
+git config --global i18n.logoutputencoding utf-8 // 配置日志输出的编码
+
+git config --global user.name “git”
+git config --global user.email coTest_1@163.com
+git config --global gui.encoding utf-8
+git config --global core.quotepath false
+git config --global http.postBuffer 524288000
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
+
+// 删除配置
+git config --unset --global user.name
+git config --unset --global user.email
+git config --unset --global gui.encoding
+git config --unset --global core.quotepath
+git config --unset --global http.postbuffer
+git config --unset --global i18n.commitencoding
+git config --unset --global i18n.logoutputencoding
+
+// 查看Git配置信息
+git config --global --list
+```
+
 ## 获取帮助信息
 ```
 # 获取 git config 命令的帮助手册
@@ -136,6 +168,26 @@ git tag -d [标签名]
 
 删除指定的分支  
 用法：git branch -d [branch name]
+
+## 重命名
+1. 本地分支重命名(还没有推送到远程)
+```
+git branch -m oldName newName
+```
+2. 远程分支重命名 (已经推送远程-假设本地分支和远程对应分支名称相同)
+```
+a. 重命名远程分支对应的本地分支
+git branch -m oldName newName
+
+b. 删除远程分支
+git push --delete origin oldName
+
+c. 上传新命名的本地分支
+git push origin newName
+
+d.把修改后的本地分支与远程分支关联
+git branch --set-upstream-to origin/newName
+```
 
 # git checkout
 
