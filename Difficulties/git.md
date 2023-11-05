@@ -1,19 +1,3 @@
-# 0. 模板
-
-**时间**：2023.10.15  
-**描述**：  
-```
-报错内容
-```
-**原因**：   
-**解决**：  
-**参考**：
-
-
-
-
-
-
 # 1. git push 报错 remote Support for password authentication was removed on August 13, 2021.
 **时间**：2023.10.15  
 **描述**：  
